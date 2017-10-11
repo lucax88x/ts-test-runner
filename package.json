@@ -1,0 +1,22 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "ts-mockito issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && karma start --single-run"
+  },
+  "author": "Luca Trazzi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.34",
+    "electron": "^1.7.9",
+    "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-electron-launcher": "^0.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.4"
+  }
+}
