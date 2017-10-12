@@ -1,16 +1,8 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "downlevelIteration": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "strictNullChecks": true,
-    "target": "es2016",
     "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -23,11 +15,7 @@
       "dom"
     ]
   },
-  "files": [
-    "src/test.ts"
-  ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+  "exclude": [
+    "node_modules"
   ]
 }

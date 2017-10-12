@@ -8,7 +8,7 @@ module.exports = function (config) {
         ],
         reporters: ['progress', 'mocha'],
         files: [
-            'src/test.js'
+        'dist/*.js'
         ],
         browsers: ['Electron'],
     })
