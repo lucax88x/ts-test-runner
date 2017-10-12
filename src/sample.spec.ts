@@ -1,9 +1,14 @@
-import Greeter from './sample';
+import { DtoData } from './sample';
+import { mock, when, instance, verify } from 'ts-mockito';
 
 describe('Sayings Greeter', () => {
     it('should greet', () => {
-        const greeter = new Greeter('John');
+        const mockData = mock(DtoData);
 
-        expect(greeter.greet()).toBe('Hello, John');
+        when(mockData.data).thenReturn('test');
+
+        var data = instance(mockData);
+
+        expect(data.data).toBe('test');
     });
 });

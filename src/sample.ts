@@ -1,7 +1,7 @@
-export default class Greeter {
-    constructor(private greeting: string) {
-    }
-    greet() {
-        return `Hello, ${this.greeting}`;
+export class DtoData {
+    data: string;
+
+    imGonnaBreakTheDto() {
+        return this.data && this.data;
     }
 }
